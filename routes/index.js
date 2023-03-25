@@ -51,12 +51,4 @@ router.post("/favNumber", async (req, res) => {
   });
 });
 
-router.delete("/favNumber", (req, res) => {
-  favouriteNumber.favouriteNumber = 0; 
-  save(favouriteNumber);
-  res.json({
-    status: "success"
-  });
-});
-
 module.exports = router;
